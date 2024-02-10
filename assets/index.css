@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	height: 100%;
+	font-family: "Noto Sans JP", sans-serif;
+}
+
+#__nuxt {
+	height: 100%;
+}
+
+html.dark {
+	background-color: rgb(17 24 39);
+	color: rgb(203, 213, 225);
+}
+
+a {
+	color: #646cff;
+	text-decoration: inherit;
+}
+a:hover {
+	text-decoration: underline;
+}
