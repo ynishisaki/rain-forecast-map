@@ -22,16 +22,6 @@ export default function createMap(mapElement: HTMLDivElement, setLngLat: (lon: n
 		"top-right"
 	);
 
-	// map.addControl(
-	// 	new maplibregl.GeolocateControl({
-	// 		positionOptions: {
-	// 			enableHighAccuracy: true,
-	// 		},
-	// 		showUserLocation: true,
-	// 		trackUserLocation: false,
-	// 	}),
-	// 	"top-right"
-	// );
 	let geolocate = new GeolocateControl({
 		positionOptions: {
 			enableHighAccuracy: true,

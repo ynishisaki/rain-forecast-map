@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import "maplibre-gl/dist/maplibre-gl.css";
-// import { onMounted, ref } from "vue";
-// import createMap from "@/functions/createMap";
 import RainLayer from "mapbox-gl-rain-layer";
 
 const store = useLonLat();
@@ -18,15 +16,6 @@ onMounted(() => {
 			scale: "noaa",
 		});
 		map.addLayer(rainLayer);
-
-		// You can get the HTML text for the legend
-		const legendHTML = rainLayer.getLegendHTML();
-
-		// You can receive radar data refresh events
-		// data.timestamp - Unix timestamp in seconds (UTC) when the data was generated
-		rainLayer.on("refresh", (data) => {
-			console.log(data.timestamp);
-		});
 	});
 });
 </script>
